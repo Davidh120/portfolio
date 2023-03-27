@@ -1,6 +1,6 @@
 import React, { useState} from 'react'
 import "./header.css"
-import LogoDark from "../../assets/img/logo_dark.png"
+import LogoDark from "/src/assets/img/logo_dark.png"
 
 export const Header = () => {
     //Toggle Menu
