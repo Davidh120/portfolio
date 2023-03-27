@@ -1,6 +1,6 @@
 import React, { useState} from 'react'
 import "./header.css"
-import Logo from "../../assets/img/logo_dark.png"
+import LogoDark from "../../assets/img/logo_dark.png"
 
 export const Header = () => {
     //Toggle Menu
@@ -10,8 +10,8 @@ export const Header = () => {
     return (
         <header className="header">
             <nav className='nav container'>
-                <a href="/" className="nav-logo">
-                    <img src={Logo} alt="logo" />
+                <a href="#home" className="nav-logo">
+                    <img src={LogoDark} alt="logo" />
                 </a>
 
                 <div className={Toggle ? "nav-menu show-menu" : "nav-menu"}>
