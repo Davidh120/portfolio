@@ -19,7 +19,7 @@ export const projectsData = [
     title: "Portfolio",
     description: "David Heredia Portfolio: React.js, SwiperJs, EmailJs",
     page: true,
-    demo: "/",
+    demo: "https://davidherediadev.com/",
     code: "https://github.com/Davidh120/Portfolio"
   },
   {
