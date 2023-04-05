@@ -16,8 +16,7 @@ export const Works = () => {
     const [isMobile, setIsMobile] = useState(window.matchMedia('(max-width: 767px)').matches);
 
     const setShowMore = (id) => {
-        setShow(id);a
-        console.log(id)
+        setShow(id);
     };
 
     useEffect(() => {
@@ -44,7 +43,7 @@ export const Works = () => {
                     spaceBetween: 20
                 },
                 768: {
-                    slidesPerView: 2,
+                    slidesPerView: 1,
                     spaceBetween: 40
                 },
                 992: {
@@ -57,26 +56,42 @@ export const Works = () => {
                 return (
                     <SwiperSlide className="portfolio-card" key={item.id}>
                         <div className="flip">
-                            <div className={isMobile ? "facing portfolio-img" : "front portfolio-img"} style={{ backgroundImage: `url(${item.image})` }}>
+                            <div className={isMobile ? "facing portfolio-img" : "front portfolio-img"}>
+                                <img src={item.image} alt={item.title} />
+                            </div>
+                            <div className="button-info">
                                 <span className="more-button" onClick={() => setShowMore(item.id)}>
                                     View More
                                     <i className="uil uil-arrow-right more-button-icon"></i>
                                 </span>
                             </div>
                             <div className={isMobile ? (show === item.id ? "behind show-more" : "behind show-less") : "back"}>
-                                <i className="uil uil-times more-close-icon" onClick={() => setShowMore(0)}></i>
-                                <h2>{item.title}</h2>
-                                <p>{item.description}</p>
+                                <div className="info">
+                                    <i className="uil uil-times more-close-icon" onClick={() => setShowMore(0)}></i>
+                                    <h2>{item.title}</h2>
+                                    <p>{item.description}</p>
+                                </div>
                             </div>
                         </div>
 
                         <h3 className="portfolio-title">{item.title}</h3>
-                        <a href={item.demo} className="portfolio-button" target="_blank">
-                            Demo <i className="uil uil-window portfolio-button-icon"></i>
-                        </a>
-                        <a href={item.code} className="portfolio-button" target="_blank">
-                            Code <i className="uil uil-code-branch portfolio-button-icon code"></i>
-                        </a>
+                        {item.page
+                            ?
+                            <div className="buttons">
+                                <a href={item.demo} className="portfolio-button" target="_blank">
+                                    Page <i className="uil uil-window portfolio-button-icon"></i>
+                                </a>
+                                <a href={item.code} className="portfolio-button" target="_blank">
+                                    Code <i className="uil uil-code-branch portfolio-button-icon code"></i>
+                                </a>
+                            </div>
+                            :
+                            <div className="demo-content">
+                                <a href={item.code} className="portfolio-button" target="_blank">
+                                    Code <i className="uil uil-window portfolio-button-icon"></i>
+                                </a>
+                            </div>
+                        }
                     </SwiperSlide>
                 )
             })}

@@ -21,6 +21,15 @@
   margin-right: 2px;
   margin-bottom: 1em;
   width: 100%;
+  height: auto;
+}
+
+.flip img{
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
 }
 
 /*desktop*/
@@ -30,8 +39,7 @@
   color: white;
   width: inherit;
   height: 220px;
-  padding: 1rem 2rem;
-  background: var(--title-color-dark);
+  background: var(--title-color-dark) linear-gradient(to bottom right, #000000, #012139, var(--secondary-color));
   border-radius: 0.5rem;
   transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275),
     opacity 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -39,6 +47,10 @@
   -moz-border-radius: 0.5rem;
   -ms-border-radius: 0.5rem;
   -o-border-radius: 0.5rem;
+}
+
+.flip .info{
+  padding: 1rem 2rem;
 }
 
 .flip .front {
@@ -86,9 +98,10 @@
   color: white;
   width: inherit;
   height: 220px;
-  padding: 1rem 2rem;
-  background: var(--title-color-dark);
+  background: var(--title-color-dark) linear-gradient(to bottom right, #000000, #012139, var(--secondary-color));
   border-radius: 0.5rem;
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    opacity 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   -webkit-border-radius: 0.5rem;
   -moz-border-radius: 0.5rem;
   -ms-border-radius: 0.5rem;
@@ -160,13 +173,18 @@
   animation: fade-in-down 0.2s ease-out forwards;
 }
 
+.button-info{
+  display: flex;
+  justify-content: center;
+}
+
 .more-button {
   color: var(--title-color);
   font-size: var(--small-font-size);
   font-weight: var(--font-medium);
   display: none;
   align-items: center;
-  margin-top: 15rem;
+  margin-top: 0.5rem;
   column-gap: 0.25rem;
   cursor: pointer;
 }
@@ -198,6 +216,8 @@
   display: flex;
   justify-content: center;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .portfolio-title {
@@ -264,11 +284,6 @@
   -o-transform: translateX(0.25rem);
 }
 
-.swiper-button-disabled {
-  color: grey !important;
-  cursor: not-allowed !important;
-}
-
 /* Botones de navegación */
 
 .portfolio-button-prev,
@@ -296,20 +311,16 @@
   color: var(--title-color-dark);
 }
 
+.swiper-button-disabled {
+  color: grey !important;
+  cursor: not-allowed !important;
+}
+
 /* Breakpoints */
 
 @media screen and (max-width: 992px) {
   .portfolio-container {
-    width: 45rem;
-  }
-
-  .portfolio-img {
-    height: 180px;
-  }
-
-  .flip .front,
-  .flip .back {
-    height: 180px;
+    width: 33rem;
   }
 
   .flip h2 {
@@ -324,15 +335,6 @@
 @media screen and (max-width: 768px) {
   .portfolio-container {
     width: 30rem;
-  }
-
-  .portfolio-img {
-    height: 246px;
-  }
-
-  .flip .facing,
-  .flip .behind {
-    height: 246px;
   }
 
   .flip h2 {
@@ -354,17 +356,12 @@
 
 @media screen and (max-width: 576px) {
   .portfolio-container {
-    width: 23rem;
-  }
-
-  .portfolio-img {
-    height: 173px;
+    width: 22rem;
   }
 
   .flip .facing,
   .flip .behind {
     height: 173px;
-    padding: 1rem 1rem;
   }
 
   .flip h2 {
@@ -374,26 +371,16 @@
   .flip p {
     font-size: var(--smaller-font-size);
   }
-
-  .more-button{
-    margin-top: 10rem;
-  }
 }
 
 @media screen and (max-width: 350px) {
   .portfolio-container {
-    padding: 1.8rem;
     width: 18rem;
-  }
-
-  .portfolio-img {
-    height: 126px;
   }
 
   .flip .facing,
   .flip .behind {
     height: 126px;
-    padding: 0.5rem 0.5rem;
   }
 
   .flip h2 {
@@ -402,9 +389,5 @@
 
   .flip p {
     font-size: var(--tiny-font-size);
-  }
-
-  .more-button{
-    margin-top: 8rem;
   }
 }
