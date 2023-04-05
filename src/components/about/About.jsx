@@ -10,7 +10,7 @@ export const About = () => {
       <h2 className="section-title">About Me</h2>
       <span className="section-subtitle">My introduction</span>
       <div className="about-container container grid">
-        <img src={AboutImg} alt="David Heredia" className="about-img" />
+        <img src={AboutImg} alt="David Heredia" className="about-img" loading='lazy'/>
         <div className="about-data">
           <Info />
           <p className="about-description">
