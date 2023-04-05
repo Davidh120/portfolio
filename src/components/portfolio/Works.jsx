@@ -33,7 +33,9 @@ export const Works = () => {
                 prevEl: isMobile ? null : ".portfolio-button-prev",
                 nextEl: isMobile ? null : ".portfolio-button-next",
             }}
-            pagination={{ clickable: true }}
+            pagination={{
+                clickable: true,
+                dynamicBullets: true}}
             mousewheel={!isMobile}
             slidesPerView={1}
             spaceBetween={5}
