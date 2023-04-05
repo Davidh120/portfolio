@@ -28,19 +28,19 @@ export const Works = () => {
 
     return (
         <Swiper className="portfolio-container container mySwiper"
-            cssMode={true}
+            cssMode={!isMobile}
             navigation={{
-                prevEl: ".portfolio-button-prev",
-                nextEl: ".portfolio-button-next",
+                prevEl: isMobile ? null : ".portfolio-button-prev",
+                nextEl: isMobile ? null : ".portfolio-button-next",
             }}
             pagination={{ clickable: true }}
-            mousewheel={true}
+            mousewheel={!isMobile}
             slidesPerView={1}
             spaceBetween={5}
             breakpoints={{
                 576: {
                     slidesPerView: 1,
-                    spaceBetween: 20
+                    spaceBetween: 50
                 },
                 768: {
                     slidesPerView: 1,
@@ -62,7 +62,7 @@ export const Works = () => {
                             <div className="button-info">
                                 <span className="more-button" onClick={() => setShowMore(item.id)}>
                                     View More
-                                    <i className="uil uil-arrow-right more-button-icon"></i>
+                                    <i className="uil uil-comment-info more-button-icon"></i>
                                 </span>
                             </div>
                             <div className={isMobile ? (show === item.id ? "behind show-more" : "behind show-less") : "back"}>
@@ -95,12 +95,16 @@ export const Works = () => {
                     </SwiperSlide>
                 )
             })}
-            <div className="portfolio-button-prev">
-                {<i className="uil uil-angle-left"></i>}
-            </div>
-            <div className="portfolio-button-next">
-                {<i className="uil uil-angle-right"></i>}
-            </div>
+            {isMobile ? (
+                <></>
+            ) : (
+                <><div className="portfolio-button-prev">
+                    {<i className="uil uil-angle-left"></i>}
+                </div>
+                    <div className="portfolio-button-next">
+                        {<i className="uil uil-angle-right"></i>}
+                    </div></>
+            )}
         </Swiper>
     )
 }

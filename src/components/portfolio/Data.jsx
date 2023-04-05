@@ -54,7 +54,7 @@ export const projectsData = [
   {
     id: 6,
     image: Work6,
-    title: "online stock image platform",
+    title: "Stock image platform",
     description: "Stock image platform: Sails, PostgreSql, Ejs, Bootstrap.",
     page: false,
     demo: "#",
