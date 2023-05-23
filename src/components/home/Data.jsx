@@ -1,9 +1,20 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
 import {TypeAnimation} from "react-type-animation"
 
-export const Data = () => {
+export const Data = ({timeline, ease}) => {
+    let content = useRef(null);
+
+    useEffect(() => {
+        const title = content.children[0]
+        const subTitle = content.children[1]
+        const paragraph = content.children[2]
+        const btn = content.children[3]
+
+        timeline.staggerFrom([title, subTitle, paragraph, btn], 0.7, {opacity: 0, y: 200, ease: ease, delay: .8}, .15)
+    }, [])
+
     return (
-        <div className="home-data">
+        <div className="home-data" ref={el => content = el}>
             <h1 className="home-title">
                 David Heredia
                 <svg width="38px" height="38px" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg" className='home-dev'>
@@ -28,6 +39,7 @@ export const Data = () => {
             />
             </h2>
             <p className="home-description">I'm a tech-passionate full-stack web developer, building innovative solutions through teamwork.</p>
+            <div>
             <a href="#contact" className="button button-flex">
                 Let's connect
                 <svg
@@ -48,6 +60,7 @@ export const Data = () => {
                     ></path>
                 </svg>
             </a>
+            </div>
         </div>
     )
 }

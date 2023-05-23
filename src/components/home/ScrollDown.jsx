@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
 
-export const ScrollDown = () => {
+export const ScrollDown = ({ timeline, ease }) => {
+    let icon = useRef(null);
+
+    useEffect(() => {
+        timeline.from(icon, 0.5, { opacity: 0, y: 100, ease: ease })
+    }, [])
+
     return (
-        <div className="home-scroll">
+        <div className="home-scroll" ref={el => icon = el}>
             <a href="#about" className="home-scroll-button button-flex">
                 <svg
                     width="32px"

@@ -27,6 +27,13 @@ export const BackEnd = () => {
                             <span className="skills-level">Intermediate</span>
                         </div>
                     </div>
+                    <div className="skills-data">
+                        <i className="uil uil-graduation-cap"></i>
+                        <div>
+                            <h3 className="skills-name">Python</h3>
+                            <span className="skills-level">Basic</span>
+                        </div>
+                    </div>
                 </div>
                 <div className="skills-group">
                     <div className="skills-data">
@@ -48,6 +55,13 @@ export const BackEnd = () => {
                         <div>
                             <h3 className="skills-name">MongoDB</h3>
                             <span className="skills-level">Intermediate</span>
+                        </div>
+                    </div>
+                    <div className="skills-data">
+                        <i className="uil uil-graduation-cap"></i>
+                        <div>
+                            <h3 className="skills-name">Django</h3>
+                            <span className="skills-level">Basic</span>
                         </div>
                     </div>
                 </div>

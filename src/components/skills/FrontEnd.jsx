@@ -27,12 +27,26 @@ export const FrontEnd = () => {
                             <span className="skills-level">Intermediate</span>
                         </div>
                     </div>
+                    <div className="skills-data">
+                        <i className="uil uil-graduation-cap"></i>
+                        <div>
+                            <h3 className="skills-name">GSAP</h3>
+                            <span className="skills-level">Basic</span>
+                        </div>
+                    </div>
                 </div>
                 <div className="skills-group">
                     <div className="skills-data">
                         <i className="uil uil-graduation-cap"></i>
                         <div>
                             <h3 className="skills-name">Bootstrap</h3>
+                            <span className="skills-level">Intermediate</span>
+                        </div>
+                    </div>
+                    <div className="skills-data">
+                        <i className="uil uil-graduation-cap"></i>
+                        <div>
+                            <h3 className="skills-name">TailWind</h3>
                             <span className="skills-level">Intermediate</span>
                         </div>
                     </div>

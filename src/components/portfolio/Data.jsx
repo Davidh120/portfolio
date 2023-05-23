@@ -1,9 +1,10 @@
 import Work1 from '../../assets/img/h3lix.jpg'
-import Work2 from '../../assets/img/portfolio.png'
-import Work3 from '../../assets/img/costApp.png'
-import Work4 from '../../assets/img/todo.png'
-import Work5 from '../../assets/img/Blog.png'
-import Work6 from '../../assets/img/Stock_img.png'
+import Work2 from '../../assets/img/purseflex.png'
+import Work3 from '../../assets/img/portfolio.png'
+import Work4 from '../../assets/img/costApp.png'
+import Work5 from '../../assets/img/todo.png'
+import Work6 from '../../assets/img/Blog.png'
+import Work7 from '../../assets/img/Stock_img.png'
 
 export const projectsData = [
   {
@@ -18,6 +19,15 @@ export const projectsData = [
   {
     id: 2,
     image: Work2,
+    title: "PurseFlex",
+    description: "Financial control tools.: React.js, Tailwind, GSAP, Lenis",
+    page: true,
+    demo: "https://davidh120.github.io/purseflex/",
+    code: "https://github.com/Davidh120/purseflex"
+  },
+  {
+    id: 3,
+    image: Work3,
     title: "Portfolio",
     description: "David Heredia Portfolio: React.js, SwiperJs, EmailJs",
     page: true,
@@ -25,8 +35,8 @@ export const projectsData = [
     code: "https://github.com/Davidh120/Portfolio"
   },
   {
-    id: 3,
-    image: Work3,
+    id: 4,
+    image: Work4,
     title: "Cost Management App",
     description: "Expense tracker web app: Vue.js, Firebase Auth, Cloud Firestore.",
     page: true,
@@ -34,8 +44,8 @@ export const projectsData = [
     code: "https://github.com/Davidh120/cost-management-app"
   },
   {
-    id: 4,
-    image: Work4,
+    id: 5,
+    image: Work5,
     title: "Todo App",
     description: "Task list web app: Vue.js, local storage.",
     page: true,
@@ -43,8 +53,8 @@ export const projectsData = [
     code: "https://github.com/Davidh120/todo-app"
   },
   {
-    id: 5,
-    image: Work5,
+    id: 6,
+    image: Work6,
     title: "Travel Blog",
     description: "Tavel Blog: Express, MySql, Ejs, Bootstrap.",
     page: false,
@@ -52,8 +62,8 @@ export const projectsData = [
     code: "https://github.com/Davidh120/travel_blog"
   },
   {
-    id: 6,
-    image: Work6,
+    id: 7,
+    image: Work7,
     title: "Stock image platform",
     description: "Stock image platform: Sails, PostgreSql, Ejs, Bootstrap.",
     page: false,

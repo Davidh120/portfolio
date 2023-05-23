@@ -9,12 +9,20 @@ import { Portfolio } from './components/portfolio/Portfolio';
 import { Contact } from './components/contact/Contact';
 import { Footer } from './components/footer/Footer';
 
+//GSAP
+import { gsap, Power3 } from "gsap"
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
 function App() {
+  let tl = gsap.timeline()
+  let ease = Power3.easeOut()
+  gsap.registerPlugin(ScrollTrigger);
+
   return (
     <>
-      <Header/>
+      <Header timeline={tl} ease={ease} />
       <main className="main scroll-container">
-        <Home/>
+        <Home timeline={tl} ease={ease}/>
         <About/>
         <Skills/>
         <Services/>
