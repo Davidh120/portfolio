@@ -11,16 +11,16 @@ export const projectsData = [
     id: 1,
     image: Work1,
     title: "H3LIX Page",
-    description: "Creating a webpage for an artist. Page not available yet.",
-    page: false,
-    demo: "#",
+    description: "Webpage for an artist: Vue.js, Scss, Brevo, Lenis, Google analytics",
+    page: true,
+    demo: "https://www.h3lixmusic.com/",
     code: "https://github.com/Davidh120/h3lix"
   },
   {
     id: 2,
     image: Work2,
     title: "PurseFlex",
-    description: "Financial control tools.: React.js, Tailwind, GSAP, Lenis",
+    description: "Financial control tools: React.js, Tailwind, GSAP, Lenis",
     page: true,
     demo: "https://davidh120.github.io/purseflex/",
     code: "https://github.com/Davidh120/purseflex"

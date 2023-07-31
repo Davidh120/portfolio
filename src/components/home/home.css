@@ -64,6 +64,7 @@
   height: 260px;
   animation: profile-animate 8s ease-in-out infinite 0.5s;
   -webkit-animation: profile-animate 8s ease-in-out infinite 0.5s;
+  cursor: pointer;
 }
 
 @keyframes profile-animate {
