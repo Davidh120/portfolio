@@ -9,7 +9,7 @@ export const Social = ({timeline, ease}) => {
         const secondIcon = icons.children[1]
         const thirdIcon = icons.children[2]
 
-        timeline.staggerFrom([firstIcon, secondIcon, thirdIcon], 0.5, {opacity: 0, x: -200, ease: ease, delay: .8}, .15)
+        timeline.staggerFrom([firstIcon, secondIcon, thirdIcon], 0.3, {opacity: 0, x: -200, ease: ease, delay: .5}, .1)
     }, [])
 
     return (

@@ -19,7 +19,7 @@ export const Header = ({ timeline, ease }) => {
         const navItemsArray = [navItem1, navItem2, navItem3, navItem4, navItem5, navItem6];
 
         timeline.from(logo, 1, { opacity: 0, y: -200 })
-        timeline.from(navItemsArray, 1, { opacity: 0, y: -200, stagger: { amount: .4 }, ease: ease }, .15)
+        timeline.from(navItemsArray, 1, { opacity: 0, y: -200, stagger: { amount: .4 }, ease: ease }, .10)
     }, [])
 
     const scrollToSection = (event, sectionId) => {

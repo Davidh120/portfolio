@@ -10,7 +10,7 @@ export const Data = ({timeline, ease}) => {
         const paragraph = content.children[2]
         const btn = content.children[3]
 
-        timeline.staggerFrom([title, subTitle, paragraph, btn], 0.7, {opacity: 0, y: 200, ease: ease, delay: .8}, .15)
+        timeline.staggerFrom([title, subTitle, paragraph, btn], 0.7, {opacity: 0, y: 200, ease: ease, delay: .8}, .10)
     }, [])
 
     return (

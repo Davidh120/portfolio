@@ -10,7 +10,7 @@ export const Home = ({ timeline, ease }) => {
   let image = useRef(null);
 
   useEffect(() => {
-    timeline.from(image, 1, { opacity: 0, x: 1000, ease: ease })
+    timeline.from(image, 0.8, { opacity: 0, x: 1000, ease: ease })
   }, [])
 
   return (
