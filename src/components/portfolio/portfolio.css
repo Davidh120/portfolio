@@ -4,14 +4,13 @@
 
 .portfolio-container {
   position: relative;
-  padding: 0 2rem;
+  padding: 2rem 2rem;
 }
 
 .portfolio-card {
   background-color: var(--container-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 1.2rem;
-  margin-bottom: var(--mb-3);
   border-radius: 1rem;
 }
 

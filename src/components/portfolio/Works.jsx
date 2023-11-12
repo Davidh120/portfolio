@@ -59,7 +59,7 @@ export const Works = () => {
                     <SwiperSlide className="portfolio-card" key={item.id}>
                         <div className="flip">
                             <div className={isMobile ? "facing portfolio-img" : "front portfolio-img"}>
-                                <img src={item.image} alt={item.title} loading="lazy"/>
+                                <img src={item.image} alt={item.title}/>
                             </div>
                             <div className="button-info">
                                 <span className="more-button" onClick={() => setShowMore(item.id)}>

@@ -6,8 +6,7 @@
   grid-template-columns: repeat(2, max-content);
   justify-content: center;
   column-gap: 6rem;
-  padding-bottom: 3rem;
-  margin-top: -0.5rem;
+  margin-top: -2rem;
 }
 
 .contact-title {
@@ -142,7 +141,8 @@
 @media screen and (max-width: 768px) {
     .contact-container{
         grid-template-columns: 1fr;
-        row-gap: 1rem;
+        row-gap: 4rem;
+        margin-bottom: -16rem;
     }
 
     .contact-info{

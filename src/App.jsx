@@ -13,7 +13,12 @@ import { Footer } from './components/footer/Footer';
 import { gsap, Power3 } from "gsap"
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
+//Lenis
+import { Scroll } from './components/Scroll';
+
 function App() {
+  Scroll();
+
   let tl = gsap.timeline()
   let ease = Power3.easeOut()
   gsap.registerPlugin(ScrollTrigger);
@@ -21,7 +26,7 @@ function App() {
   return (
     <>
       <Header timeline={tl} ease={ease} />
-      <main className="main scroll-container">
+      <main className="main">
         <Home timeline={tl} ease={ease}/>
         <About/>
         <Skills/>

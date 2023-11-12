@@ -7,9 +7,20 @@ export const ScrollDown = ({ timeline, ease }) => {
         timeline.from(icon, 0.5, { opacity: 0, y: 100, ease: ease })
     }, [])
 
+    const scrollToSection = (event, sectionId) => {
+        event.preventDefault();
+        const section = document.getElementById(sectionId);
+
+        if (section) {
+            section.scrollIntoView({
+                behavior: 'smooth',
+            });
+        }
+    };
+
     return (
         <div className="home-scroll" ref={el => icon = el}>
-            <a href="#about" className="home-scroll-button button-flex">
+            <a href="#about" className="home-scroll-button button-flex" onClick={(event) => {scrollToSection(event, "about")}}>
                 <svg
                     width="32px"
                     height="32px"

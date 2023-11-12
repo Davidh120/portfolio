@@ -13,6 +13,17 @@ export const Data = ({timeline, ease}) => {
         timeline.staggerFrom([title, subTitle, paragraph, btn], 0.7, {opacity: 0, y: 200, ease: ease, delay: .8}, .10)
     }, [])
 
+    const scrollToSection = (event, sectionId) => {
+        event.preventDefault();
+        const section = document.getElementById(sectionId);
+
+        if (section) {
+            section.scrollIntoView({
+                behavior: 'smooth',
+            });
+        }
+    };
+
     return (
         <div className="home-data" ref={el => content = el}>
             <h1 className="home-title">
@@ -40,7 +51,7 @@ export const Data = ({timeline, ease}) => {
             </h2>
             <p className="home-description">I'm a tech-passionate full-stack web developer, building innovative solutions through teamwork.</p>
             <div>
-            <a href="#contact" className="button button-flex">
+            <a href="#contact" className="button button-flex" onClick={(event) => {scrollToSection(event, "contact")}}>
                 Let's connect
                 <svg
                     className="button-icon"
