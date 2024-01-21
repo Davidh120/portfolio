@@ -25,13 +25,16 @@
 }
 
 .home-social-icon:hover {
-  color: #0026d7;
+  color: var(--secondary-color);
 }
 
 .home-title {
   font-size: var(--big-font-size);
   margin-bottom: var(--mb-0-25);
   margin-left: -6px;
+  background: linear-gradient(90deg, rgba(144,77,154,1) 10%, rgba(118,219,227,1) 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .home-dev {
@@ -57,7 +60,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  box-shadow: 0 0 10px 10px rgba(225 225 225 / 30%);
+  box-shadow: 0 0 30px 15px rgba(126, 240, 248, 0.1);
   order: 1;
   justify-self: center;
   width: 260px;

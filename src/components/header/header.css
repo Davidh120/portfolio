@@ -35,9 +35,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: var(--small-font-size);
+  font-size: var(--normal-font-size);
   color: var(--title-color);
-  font-weight: var(--font-medium);
+  font-weight: var(--font-normal);
   transition: 0.3s;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
@@ -71,7 +71,7 @@
 /*active links*/
 .active-link,
 .nav-link:hover {
-  color: #0026d7;
+  color: var(--secondary-color);
 }
 
 .active-link2{

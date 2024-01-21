@@ -11,12 +11,12 @@
   /*colors*/
   --hue: 0;
   --sat: 0%;
-  --title-color: hsl(var(--hue), var(--sat), 20%);
-  --title-color-dark: hsl(var(--hue), var(--sat), 0%);
+  --title-color: hsl(var(--hue), var(--sat), 90%);
+  --title-color-dark: hsl(var(--hue), var(--sat), 30%);
   --text-color: hsl(var(--hue), var(--sat), 46%);
   --body-color: hsl(var(--hue), var(--sat), 98%);
-  --container-color: #fff;
-  --secondary-color: #0026d7;
+  --container-color: #000;
+  --secondary-color: #76dbe3;
 
   /*font & typography */
   --title-font: "ailerons", sans-serif;
@@ -81,7 +81,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #000000;
+  background-color: var(--secondary-color);
   border-radius: 4px;
 }
 
@@ -94,7 +94,7 @@ textarea {
 }
 
 body {
-  background-color: white;
+  background-color: var(--container-color);
   background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7) rgba(255, 255, 255, 0.3));
   color: var(--text-color);
   overflow-x: hidden;

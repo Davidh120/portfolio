@@ -19,7 +19,7 @@
 }
 
 .footer-link:hover {
-  color: #0026d7;
+  color: var(--secondary-color);
 }
 
 .footer-list {
