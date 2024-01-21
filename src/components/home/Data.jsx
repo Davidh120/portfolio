@@ -28,13 +28,6 @@ export const Data = ({timeline, ease}) => {
         <div className="home-data" ref={el => content = el}>
             <h1 className="home-title">
                 David Heredia
-                <svg width="38px" height="38px" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg" className='home-dev'>
-                    <path d="M9 4H6C4.89543 4 4 4.89543 4 6V14C4 15.1046 4.89543 16 6 16H18C19.1046 16 20 15.1046 20 14V12" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M15 4L13 6L15 8" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M19 4L21 6L19 8" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M12 16V20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M8 20H16" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
             </h1>
             <h2 className="home-subtitle">
             <TypeAnimation sequence={[
