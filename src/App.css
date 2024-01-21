@@ -196,6 +196,8 @@ img {
 
 .button:hover {
   background-color: var(--secondary-color);
+  filter: brightness(1.05) contrast(1.05);
+	transform: scale(1.05);
 }
 
 .button-icon {

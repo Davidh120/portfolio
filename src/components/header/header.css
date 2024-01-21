@@ -62,8 +62,8 @@
 }
 
 .nav-contact-button:hover {
-  background-color: var(--title-color-dark);
   color: var(--container-color) !important;
+  background-color: var(--secondary-color);
 }
 
 .nav-icon,
@@ -79,7 +79,7 @@
 }
 
 .active-link2{
-  color: #dfdfdf;
+  color: var(--container-color);
 }
 
 /* breakpoints*/
