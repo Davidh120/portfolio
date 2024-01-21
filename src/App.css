@@ -12,11 +12,13 @@
   --hue: 0;
   --sat: 0%;
   --title-color: hsl(var(--hue), var(--sat), 90%);
-  --title-color-dark: hsl(var(--hue), var(--sat), 30%);
-  --text-color: hsl(var(--hue), var(--sat), 46%);
+  --title-color-dark: hsl(var(--hue), var(--sat), 60%);
+  --text-color: hsl(var(--hue), var(--sat), 70%);
   --body-color: hsl(var(--hue), var(--sat), 98%);
-  --container-color: #000;
-  --secondary-color: #76dbe3;
+  --container-color: #0C0A0C;
+  --main-color: #fc00ff;
+  --secondary-color: #00dbde;
+  --gradient-color: linear-gradient(-45deg, var(--main-color) 0%, var(--secondary-color) 100% );
 
   /*font & typography */
   --title-font: "ailerons", sans-serif;
@@ -193,7 +195,7 @@ img {
 }
 
 .button:hover {
-  background-color: var(--title-color-dark);
+  background-color: var(--secondary-color);
 }
 
 .button-icon {
