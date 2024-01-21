@@ -36,7 +36,7 @@ export const Header = ({ timeline, ease }) => {
     return (
         <header className="header">
             <nav className='nav container'>
-                <a href="#home" className="nav-logo">
+                <a href="#home" className="nav-logo" onClick={(event) => { showMenu(false); setActiveNav("#home"); scrollToSection(event, "home")}}>
                     DAVID
                 </a>
 
