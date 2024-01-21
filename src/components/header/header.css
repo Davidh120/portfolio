@@ -18,7 +18,11 @@
 }
 
 .nav-logo {
-  width: 9rem;
+  font-family: var(--title-font);
+  font-size: var(--h1-font-size);
+  background: var(--gradient-color);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .nav-toggle {

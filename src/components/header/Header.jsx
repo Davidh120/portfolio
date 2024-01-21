@@ -37,7 +37,7 @@ export const Header = ({ timeline, ease }) => {
         <header className="header">
             <nav className='nav container'>
                 <a href="#home" className="nav-logo">
-                    <img src={LogoDark} alt="logo" ref={el => logo = el} />
+                    DAVID
                 </a>
 
                 <div className={Toggle ? "nav-menu show-menu" : "nav-menu"}>
