@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: var(--container-color);
+  background-color: var(--body-color);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -70,7 +70,7 @@
 /*active links*/
 .active-link,
 .nav-link:hover {
-  color: var(--secondary-color);
+  color: var(--main-color);
 }
 
 /* breakpoints*/

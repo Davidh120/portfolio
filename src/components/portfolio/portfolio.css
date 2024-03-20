@@ -38,7 +38,7 @@
   color: white;
   width: inherit;
   height: 220px;
-  background: linear-gradient(90deg, rgb(112, 60, 120) 10%, rgb(86, 161, 166) 100%);
+  background: var(--gradient-color);
   border-radius: 0.5rem;
   transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275),
     opacity 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -81,7 +81,7 @@
 .flip p {
   font-size: var(--normal-font-size);
   line-height: 160%;
-  color: var(--text-color);
+  color: var(--title-color);
 }
 
 .flip .front,
@@ -97,7 +97,7 @@
   color: white;
   width: inherit;
   height: 220px;
-  background: var(--title-color-dark) linear-gradient(to bottom right, #000000, #012139, var(--secondary-color));
+  background: var(--gradient-color);
   border-radius: 0.5rem;
   transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275),
     opacity 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -314,6 +314,10 @@
 .swiper-button-disabled {
   color: grey !important;
   cursor: not-allowed !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--main-color);
 }
 
 /* Breakpoints */
