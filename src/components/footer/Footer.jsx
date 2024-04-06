@@ -15,6 +15,9 @@ export const Footer = () => {
 
     return (
         <footer className="footer">
+        <div class="wave"></div>
+     <div class="wave"></div>
+     <div class="wave"></div>
             <div className="footer-container container">
                 <h2 className="footer-title">David Heredia</h2>
                 <ul className="footer-list">
