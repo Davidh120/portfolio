@@ -30,7 +30,7 @@ function App() {
         <Home timeline={tl} ease={ease}/>
         <About/>
         <Skills/>
-        <Services/>
+        {/* <Services/> */}
         {/* <Qualification/> */}
         <Portfolio/>
         <Contact/>

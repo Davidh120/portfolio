@@ -11,12 +11,11 @@ export const Header = ({ timeline, ease }) => {
     let navItem1 = useRef(null)
     let navItem2 = useRef(null)
     let navItem3 = useRef(null)
-    let navItem4 = useRef(null)
     let navItem5 = useRef(null)
     let navItem6 = useRef(null)
 
     useEffect(() => {
-        const navItemsArray = [navItem1, navItem2, navItem3, navItem4, navItem5, navItem6];
+        const navItemsArray = [navItem1, navItem2, navItem3, navItem5, navItem6];
 
         timeline.from(logo, 1, { opacity: 0, y: -200 })
         timeline.from(navItemsArray, 1, { opacity: 0, y: -200, stagger: { amount: .4 }, ease: ease }, .10)
@@ -57,11 +56,11 @@ export const Header = ({ timeline, ease }) => {
                                 <i className="uil uil-file nav-icon"></i> Skills
                             </a>
                         </li>
-                        <li className="nav-item" ref={el => navItem4 = el}>
+                        {/* <li className="nav-item" ref={el => navItem4 = el}>
                             <a href="#services" className={activeNav === "#services" ? "nav-link active-link" : "nav-link"} onClick={(event) => { showMenu(false); setActiveNav("#services"); scrollToSection(event, "services") }}>
                                 <i className="uil uil-briefcase-alt nav-icon"></i> Services
                             </a>
-                        </li>
+                        </li> */}
                         <li className="nav-item" ref={el => navItem5 = el}>
                             <a href="#portfolio" className={activeNav === "#portfolio" ? "nav-link active-link" : "nav-link"} onClick={(event) => { showMenu(false); setActiveNav("#portfolio"); scrollToSection(event, "portfolio") }}>
                                 <i className="uil uil-scenery nav-icon"></i> Portfolio
