@@ -90,7 +90,7 @@
     bottom: -100%;
     left: 0;
     width: 100%;
-    background-color: var(--body-color);
+    background-color: var(--container-color);
     padding: 2rem 1.5rem 4rem;
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
     border-radius: 1.5rem 1.5rem 0 0;
@@ -119,11 +119,12 @@
     -moz-border-radius: 0;
     -ms-border-radius: 0;
     -o-border-radius: 0;
+    border: none;
 }
 
   .nav-contact-button:hover {
     background-color: var(--body-color);
-    color: #0026d7 !important;
+    color: var(--main-color) !important;
   }
 
   /*show menu*/
@@ -151,7 +152,7 @@
   }
 
   .nav-close:hover {
-    color: #0026d7;
+    color: var(--main-color);
   }
 
   .nav-toggle {
