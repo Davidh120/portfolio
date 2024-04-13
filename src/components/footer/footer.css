@@ -129,6 +129,10 @@
 }
 
 @media screen and (max-width: 576px) {
+  .wave{
+    width: 200%;
+    border-radius: 100% 100% 0 0;
+  }
 }
 
 /*small devices*/

@@ -111,7 +111,6 @@
   }
 
   .nav-contact-button {
-    background-color: var(--body-color);
     color: var(--title-color);
     padding: 0.4rem 0.5rem;
     border-radius: 0;
@@ -123,7 +122,6 @@
 }
 
   .nav-contact-button:hover {
-    background-color: var(--body-color);
     color: var(--main-color) !important;
   }
 
